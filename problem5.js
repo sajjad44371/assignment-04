@@ -18,7 +18,7 @@ function  resultReport( marks ) {
    for(const mark of marks) {
      totalScore = totalScore + mark;
      
-     if(mark > 40) {
+     if(mark >= 40) {
        passCount++;
      } else {
        failCount++;
