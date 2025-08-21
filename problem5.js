@@ -27,7 +27,7 @@ function  resultReport( marks ) {
    const averageScore = totalScore / marks.length;
    const finalScore = Math.round(averageScore);
    
-   return `{ finalScore: ${finalScore}, pass: ${passCount}, fail: ${failCount} }`;
+   return { finalScore: finalScore, pass: passCount, fail: failCount };
 }
-const marks = [80];
+const marks = [50];
 console.log(resultReport(marks));
